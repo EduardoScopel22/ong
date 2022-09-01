@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(32, 27, 44),
+    rgb(7, 21, 27)
+  );
+  margin-bottom: 0;
+}
+.Logo1 {
+  display: inline-block;
+  margin-right: 65%;
+}
+.Logo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 85%;
+  margin-top: -210px;
+}
+.box {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  width: 40%;
+}
+fieldset {
+  border: 3px solid darkblue;
+}
+legend {
+  border: 1px solid rgb(0, 0, 110);
+  padding: 10px;
+  text-align: center;
+  background-color: darkblue;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.inputBox {
+  position: relative;
+}
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  width: 50%;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-block-end: 3px;
+}
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.submit {
+  width: 35%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: rgb(211, 211, 211);
+  background: rgb(29, 29, 158);
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px darkblue;
+}
+.Voltar {
+  width: 35%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: rgb(211, 211, 211);
+  background: rgb(29, 29, 158);
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px darkblue;
+}
+
+.alergia1 > label {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-block-end: 3px;
+}
