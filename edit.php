@@ -154,6 +154,6 @@ if (isset($_POST['submit'])) {
       </fieldset>
     </form>
   </div>
-  <a class="Voltar" href='opcoes.php'>Voltar</a>
+  <a class="Voltar" href='consulta.php'>Voltar</a>
 </body>
 </html>
