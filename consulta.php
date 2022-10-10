@@ -44,7 +44,7 @@
             </button>
         </div>
         <div class="d-flex">
-            <a href="sair.php" class="btn btn-danger me-5">Sair</a>
+            <a href="opcoes.php" class="btn btn-danger me-5">Sair</a>
         </div>
     </nav>
     <div class="m-3">
