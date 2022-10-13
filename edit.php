@@ -55,7 +55,7 @@
         <legend><strong>Ficha do Aluno</strong></legend>
         <div class="inputBox">
           <label for="nome" class="labelinput">Nome Completo do Aluno:</label>
-          <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required />
+          <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nomealuno;?> required />
         </div>
         <br />
         <div class="inputBox">
