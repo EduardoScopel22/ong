@@ -1,10 +1,16 @@
 <?php
 
-if (isset($_POST['submit'])) {
-  //print_r($_POST['nome']);
-  //print_r($_POST['rg']);
-  //print_r($_POST['cpf']);
+if (!empty($_GET['idaluno'])) {
+
   include_once('config.php');
+
+  $id = $_GET['idaluno'];
+
+  $sqlSelect = "SELECT conexaoesportiva FROM aluno WHERE idaluno=$id";
+
+  $result = $mysql->query($sqlSelect);
+
+  print_r($result);
 
   $nome = $_POST['nome'];
   $rg = $_POST['rg'];
@@ -22,20 +28,7 @@ if (isset($_POST['submit'])) {
   $cpfresponsavel = $_POST['cpfdoresponsavel'];
   $alergia = $_POST['alergia'];
   $pagamentos = $_POST['pagamentos'];
-
-
-  $result = mysqli_query($mysql, "INSERT INTO aluno(nomealuno,datanasc,cpfaluno,rgaluno,nomemae,cpfmae,nomepai,cpfpai,celular,endereco,email,telefonefixo,nomeresponsavel,cpfresponsavel,alergia,pagamento) VALUES ('$nome','$datanasc','$cpf','$rg','$nomemae','$cpfmae','$nomepai','$cpfpai','$celular','$endereco','$email','$telefonefixo','$nomeresponsavel','$cpfresponsavel','$alergia','$pagamentos')");
 }
-
-    session_start();
-    if((!isset($_SESSION['usuario']) == true) and (!isset($_SESSION['senha']) == true))
-    {
-        unset($_SESSION['usuario']);
-        unset($_SESSION['senha']);
-        header('Location: login.php');
-    }
-    $logado = $_SESSION['usuario'];
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -154,6 +147,6 @@ if (isset($_POST['submit'])) {
       </fieldset>
     </form>
   </div>
-  <a class="Voltar" href='opcoes.php'>Voltar</a>
+  <a class="Voltar" href='consulta.php'>Voltar</a>
 </body>
 </html>
