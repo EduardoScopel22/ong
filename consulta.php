@@ -47,7 +47,7 @@
             <a href="opcoes.php" class="btn btn-danger me-5">Sair</a>
         </div>
     </nav>
-    <div class="m-3">
+    <div class="m-1">
         <table class="table table-bg">
             <thead>
                 <tr>
