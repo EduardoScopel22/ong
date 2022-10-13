@@ -149,15 +149,15 @@ if (!empty($_GET['idaluno'])) {
           <br />
           <p>Opcão de Pagamento</p>
           <br />
-          <input type="radio" name="pagamentos" id="Carnê" value="Carnê" <?php $pagamentos == 'Carnê' ? 'checked' : '' ?> required />
+          <input type="radio" name="pagamentos" id="Carnê" value="Carnê" <?php ($pagamentos == 'Carnê') ? 'checked' : '' ?> required />
           <label for="opc1.5">Carnê</label>
-          <input type="radio" name="pagamentos" id="Pix" value="Pix" <?php $pagamentos == 'Pix' ? 'checked' : '' ?> required />
+          <input type="radio" name="pagamentos" id="Pix" value="Pix" <?php ($pagamentos == 'Pix') ? 'checked' : '' ?> required />
           <label for="opc2.5">Pix</label>
-          <input type="radio" name="pagamentos" id="Boleto" value="Boleto" <?php $pagamentos == 'Boleto' ? 'checked' : '' ?> required />
+          <input type="radio" name="pagamentos" id="Boleto" value="Boleto" <?php ($pagamentos == 'Boleto') ? 'checked' : '' ?> required />
           <label for="opc3.5">Boleto</label>
-          <input type="radio" name="pagamentos" id="Dinheiro" value="Dinheiro" <?php $pagamentos == 'Dinheiro' ? 'checked' : '' ?> required />
+          <input type="radio" name="pagamentos" id="Dinheiro" value="Dinheiro" <?php ($pagamentos == 'Dinheiro') ? 'checked' : '' ?> required />
           <label for="opc4">Dinheiro</label>
-          <input type="radio" name="pagamentos" id="Cartão" value="Cartão" <?php $pagamentos == 'Cartão' ? 'checked' : '' ?> required />
+          <input type="radio" name="pagamentos" id="Cartão" value="Cartão" <?php ($pagamentos == 'Cartão') ? 'checked' : '' ?> required />
           <label for="opc5">Cartão</label>
           <br>
           <button class="submit" name="submit" type="submit" id="submit">
