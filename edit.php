@@ -6,7 +6,7 @@ if (!empty($_GET['idaluno'])) {
 
   $id = $_GET['idaluno'];
 
-  $sqlSelect = "SELECT * FROM aluno WHERE idaluno=$id";
+  $sqlSelect = 'SELECT * FROM aluno WHERE idaluno=$id';
 
   $resultado = $mysql->query($sqlSelect);
 
