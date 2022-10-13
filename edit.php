@@ -6,6 +6,10 @@ if (!empty($_GET['idaluno'])) {
 
   $id = $_GET['idaluno'];
 
+  $sqlSelect = "SELECT * FROM aluno WHERE idaluno=$id";
+
+  $result = $mysql->query($sqlSelect);
+
   print_r($result);
 
   $nome = $_POST['nome'];
@@ -24,9 +28,6 @@ if (!empty($_GET['idaluno'])) {
   $cpfresponsavel = $_POST['cpfdoresponsavel'];
   $alergia = $_POST['alergia'];
   $pagamentos = $_POST['pagamentos'];
-
-
-  $result = mysqli_query($mysql, "INSERT INTO aluno(nomealuno,datanasc,cpfaluno,rgaluno,nomemae,cpfmae,nomepai,cpfpai,celular,endereco,email,telefonefixo,nomeresponsavel,cpfresponsavel,alergia,pagamento) VALUES ('$nome','$datanasc','$cpf','$rg','$nomemae','$cpfmae','$nomepai','$cpfpai','$celular','$endereco','$email','$telefonefixo','$nomeresponsavel','$cpfresponsavel','$alergia','$pagamentos')");
 }
 
     session_start();
