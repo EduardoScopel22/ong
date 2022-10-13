@@ -14,9 +14,9 @@ if (!empty($_GET['idaluno'])) {
   {
     while($user_data = mysqli_fetch_assoc($result))
     {
-      $nome = $user_data['nomealuno'];
-      $rg = $user_data['rgaluno'];
-      $cpf = $user_data['cpfaluno'];
+      $nomealuno = $user_data['nomealuno'];
+      $rgaluno = $user_data['rgaluno'];
+      $cpfaluno = $user_data['cpfaluno'];
       $datanasc = $user_data['datanasc'];
       $nomemae = $user_data['nomemae'];
       $cpfmae = $user_data['cpfmae'];
@@ -29,7 +29,7 @@ if (!empty($_GET['idaluno'])) {
       $nomeresponsavel = $user_data['nomeresponsavel'];
       $cpfresponsavel = $user_data['cpfresponsavel'];
       $alergia = $user_data['alergia'];
-      $pagamentos = $user_data['pagamento'];
+      $pagamento = $user_data['pagamento'];
     }
   }
   else
