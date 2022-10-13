@@ -1,10 +1,12 @@
 <?php
 
-if (isset($_POST['submit'])) {
-  //print_r($_POST['nome']);
-  //print_r($_POST['rg']);
-  //print_r($_POST['cpf']);
+if (!empty($_GET['idaluno'])) {
+
   include_once('config.php');
+
+  $id = $_GET['idaluno'];
+
+  print_r($result);
 
   $nome = $_POST['nome'];
   $rg = $_POST['rg'];
