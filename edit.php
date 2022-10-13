@@ -33,10 +33,6 @@
             header('Location: consulta.php');
         }
     }
-    else
-    {
-        header('Location: consulta.php');
-    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
