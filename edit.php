@@ -8,7 +8,7 @@ if (!empty($_GET['idaluno'])) {
 
   $sqlSelect = "SELECT * FROM aluno WHERE idaluno=$idaluno";
 
-  $result = $conexao->query($sqlSelect);
+  $result = $mysql->query($sqlSelect);
 
   print_r($result);
 
@@ -28,7 +28,7 @@ if (!empty($_GET['idaluno'])) {
   $cpfresponsavel = $_POST['cpfdoresponsavel'];
   $alergia = $_POST['alergia'];
   $pagamentos = $_POST['pagamentos'];
-  
+
 }
 
     session_start();
