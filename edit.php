@@ -3,6 +3,7 @@
 
     if(!empty($_GET['idaluno']))
     {
+        echo $datanasc->format('d/m/Y H:i:s');
         $idaluno = $_GET['idaluno'];
         $sqlSelect = "SELECT * FROM aluno WHERE idaluno=$idaluno";
         $result = $mysql->query($sqlSelect);
@@ -60,7 +61,7 @@
         <br />
         <div class="inputBox">
           <label for="datadenascimento" class="labelinput">Data de Nascimento:</label>
-          <input type="date" placeholder="yyyy-mm-dd" name="datadenascimento" id="datadenascimento" class="inputdatadenascimento" value=<?php echo $datanasc;?> required />
+          <input type="date" name="datadenascimento" id="datadenascimento" class="inputdatadenascimento" value=<?php echo $datanasc;?> required />
         </div>
         <br />
         <div class="inputBox">
