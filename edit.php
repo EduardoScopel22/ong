@@ -6,11 +6,11 @@ if (!empty($_GET['idaluno'])) {
 
   $id = $_GET['idaluno'];
 
-  $sqlSelect = "SELECT conexaoesportiva FROM aluno WHERE idaluno=$id";
+  $sqlSelect = "SELECT * FROM aluno WHERE idaluno=$id";
 
-  $result = $mysql->query($sqlSelect);
+  $resultado = $mysql->query($sqlSelect);
 
-  print_r($result);
+  print_r($resultado);
 
   $nome = $_POST['nome'];
   $rg = $_POST['rg'];
