@@ -3,7 +3,6 @@
 
     if(!empty($_GET['idaluno']))
     {
-        echo $datanasc->format('d/m/Y H:i:s');
         $idaluno = $_GET['idaluno'];
         $sqlSelect = "SELECT * FROM aluno WHERE idaluno=$idaluno";
         $result = $mysql->query($sqlSelect);
