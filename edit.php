@@ -10,24 +10,33 @@ if (!empty($_GET['idaluno'])) {
 
   $resultado = $mysql->query($sqlSelect);
 
-  print_r($resultado);
+  if($resultado->num_rows > 0)
+        {
+            while($user_data = mysqli_fetch_assoc($result))
+            {
+              $nome = $_POST['nome'];
+              $rg = $_POST['rg'];
+              $cpf = $_POST['cpf'];
+              $datanasc = $_POST['datadenascimento'];
+              $nomemae = $_POST['nomedamae'];
+              $cpfmae = $_POST['cpfdamae'];
+              $nomepai = $_POST['nomedopai'];
+              $cpfpai = $_POST['cpfdopai'];
+              $celular = $_POST['telefone'];
+              $endereco = $_POST['endereço'];
+              $email = $_POST['email'];
+              $telefonefixo = $_POST['telefonefixo'];
+              $nomeresponsavel = $_POST['nomedoresponsavel'];
+              $cpfresponsavel = $_POST['cpfdoresponsavel'];
+              $alergia = $_POST['alergia'];
+              $pagamentos = $_POST['pagamentos'];
+            }
+        }
+          else
+        {
+            header('Location: consulta.php');
+        }
 
-  $nome = $_POST['nome'];
-  $rg = $_POST['rg'];
-  $cpf = $_POST['cpf'];
-  $datanasc = $_POST['datadenascimento'];
-  $nomemae = $_POST['nomedamae'];
-  $cpfmae = $_POST['cpfdamae'];
-  $nomepai = $_POST['nomedopai'];
-  $cpfpai = $_POST['cpfdopai'];
-  $celular = $_POST['telefone'];
-  $endereco = $_POST['endereço'];
-  $email = $_POST['email'];
-  $telefonefixo = $_POST['telefonefixo'];
-  $nomeresponsavel = $_POST['nomedoresponsavel'];
-  $cpfresponsavel = $_POST['cpfdoresponsavel'];
-  $alergia = $_POST['alergia'];
-  $pagamentos = $_POST['pagamentos'];
 }
 ?>
 <!DOCTYPE html>
