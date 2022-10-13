@@ -6,28 +6,33 @@ if (!empty($_GET['idaluno'])) {
 
   $idaluno = $_GET['idaluno'];
 
-  $sqlSelect = "SELECT * FROM aluno WHERE idaluno='$idaluno'";
+  $sqlSelect = "SELECT * FROM aluno WHERE idaluno=$idaluno";
 
   $result = $mysql->query($sqlSelect);
 
-  print_r($result);
-
-  $nome = $_POST['nome'];
-  $rg = $_POST['rg'];
-  $cpf = $_POST['cpf'];
-  $datanasc = $_POST['datadenascimento'];
-  $nomemae = $_POST['nomedamae'];
-  $cpfmae = $_POST['cpfdamae'];
-  $nomepai = $_POST['nomedopai'];
-  $cpfpai = $_POST['cpfdopai'];
-  $celular = $_POST['telefone'];
-  $endereco = $_POST['endereço'];
-  $email = $_POST['email'];
-  $telefonefixo = $_POST['telefonefixo'];
-  $nomeresponsavel = $_POST['nomedoresponsavel'];
-  $cpfresponsavel = $_POST['cpfdoresponsavel'];
-  $alergia = $_POST['alergia'];
-  $pagamentos = $_POST['pagamentos'];
+  if($result->num_rows > 0)
+  {
+    $nome = $_POST['nome'];
+    $rg = $_POST['rg'];
+    $cpf = $_POST['cpf'];
+    $datanasc = $_POST['datadenascimento'];
+    $nomemae = $_POST['nomedamae'];
+    $cpfmae = $_POST['cpfdamae'];
+    $nomepai = $_POST['nomedopai'];
+    $cpfpai = $_POST['cpfdopai'];
+    $celular = $_POST['telefone'];
+    $endereco = $_POST['endereço'];
+    $email = $_POST['email'];
+    $telefonefixo = $_POST['telefonefixo'];
+    $nomeresponsavel = $_POST['nomedoresponsavel'];
+    $cpfresponsavel = $_POST['cpfdoresponsavel'];
+    $alergia = $_POST['alergia'];
+    $pagamentos = $_POST['pagamentos'];
+  }
+  else
+  {
+    header('Location: consulta.php');
+  }
 
 }
 
@@ -151,13 +156,14 @@ if (!empty($_GET['idaluno'])) {
           <label for="opc4">Dinheiro</label>
           <input type="radio" name="pagamentos" id="Cartão" value="Cartão" required />
           <label for="opc5">Cartão</label>
-          <br>
-          <button class="submit" name="submit" type="submit" id="submit">
-            Enviar
-          </button>
-      </fieldset>
-    </form>
-  </div>
-  <a class="Voltar" href='consulta.php'>Voltar</a>
-</body>
-</html>
+            <br>
+            <button class="submit" name="submit" type="submit" id="submit">
+              Enviar
+            </button>
+          </fieldset>
+        </form>
+      </div>
+      <a class="Voltar" href='consulta.php'>Voltar</a>
+    </body>
+  </html>
+}
