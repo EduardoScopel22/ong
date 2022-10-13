@@ -12,6 +12,8 @@ if (!empty($_GET['idaluno'])) {
 
   if($result->num_rows > 0)
   {
+    while($user_Data = mysqli_fetch_assoc($result))
+    {
     $nome = $_POST['nome'];
     $rg = $_POST['rg'];
     $cpf = $_POST['cpf'];
@@ -28,6 +30,8 @@ if (!empty($_GET['idaluno'])) {
     $cpfresponsavel = $_POST['cpfdoresponsavel'];
     $alergia = $_POST['alergia'];
     $pagamentos = $_POST['pagamentos'];
+    }
+    print_r($nome);
   }
   else
   {
