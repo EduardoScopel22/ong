@@ -14,22 +14,22 @@ if (!empty($_GET['idaluno'])) {
   {
     while($user_data = mysqli_fetch_assoc($result))
     {
-      $nomealuno = $user_data['nomealuno'];
-      $rgaluno = $user_data['rgaluno'];
-      $cpfaluno = $user_data['cpfaluno'];
-      $datanasc = $user_data['datanasc'];
-      $nomemae = $user_data['nomemae'];
-      $cpfmae = $user_data['cpfmae'];
-      $nomepai = $user_data['nomepai'];
-      $cpfpai = $user_data['cpfpai'];
-      $celular = $user_data['celular'];
+      $nome = $user_data['nome'];
+      $rg = $user_data['rg'];
+      $cpf = $user_data['cpf'];
+      $datanasc = $user_data['datadenascimento'];
+      $nomemae = $user_data['nomedamae'];
+      $cpfmae = $user_data['cpfdamae'];
+      $nomepai = $user_data['nomedopai'];
+      $cpfpai = $user_data['cpfdopai'];
+      $celular = $user_data['telefone'];
       $endereco = $user_data['endereço'];
       $email = $user_data['email'];
       $telefonefixo = $user_data['telefonefixo'];
-      $nomeresponsavel = $user_data['nomeresponsavel'];
-      $cpfresponsavel = $user_data['cpfresponsavel'];
+      $nomeresponsavel = $user_data['nomedoresponsavel'];
+      $cpfresponsavel = $user_data['cpfdoresponsavel'];
       $alergia = $user_data['alergia'];
-      $pagamento = $user_data['pagamento'];
+      $pagamentos = $user_data['pagamentos'];
     }
   }
   else
