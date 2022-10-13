@@ -2,8 +2,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: linear-gradient(
     to right,
-    rgb(255, 255, 255),
-    rgb(243, 250, 253)
+    rgb(32, 27, 44),
+    rgb(7, 21, 27)
   );
   margin-bottom: 0;
 }
