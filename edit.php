@@ -31,7 +31,6 @@ if (!empty($_GET['idaluno'])) {
       $alergia = $user_data['alergia'];
       $pagamentos = $user_data['pagamentos'];
     }
-    print_r($nome);
   }
   else
   {
@@ -71,94 +70,94 @@ if (!empty($_GET['idaluno'])) {
         <legend><strong>Ficha do Aluno</strong></legend>
         <div class="inputBox">
           <label for="nome" class="labelinput">Nome Completo do Aluno:</label>
-          <input type="text" name="nome" id="nome" class="inputUser" required />
+          <input type="text" name="nome" id="nome" class="inputUser" value="<?php echo $nome ?>"  required />
         </div>
         <br />
         <div class="inputBox">
           <label for="datadenascimento" class="labelinput">Data de Nascimento:</label>
-          <input type="date" name="datadenascimento" id="datadenascimento" class="inputdatadenascimento" required />
+          <input type="date" name="datadenascimento" id="datadenascimento" class="inputdatadenascimento" value="<?php echo $datanasc ?>" required />
         </div>
         <br />
         <div class="inputBox">
           <label for="rg" class="labelinput">Nº do RG:</label>
-          <input type="text" name="rg" \ pattern="\d{2}\.\d{3}\.\d{3}-\d{1}" \ title="Digite um RG no formato: xx.xxx.xxx-x" class="inputUser" required />
+          <input type="text" name="rg" \ pattern="\d{2}\.\d{3}\.\d{3}-\d{1}" \ title="Digite um RG no formato: xx.xxx.xxx-x" class="inputUser" value="<?php echo $rg ?>" required />
         </div>
         <br />
         <div class="inputBox">
           <label for="cpf" class="labelinput">Nº do CPF:</label>
-          <input type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx" class="inputUser" required />
+          <input type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx" class="inputUser" value="<?php echo $cpf ?>" required />
         </div>
         <br />
         <div class="inputBox">
           <label for="nomedamae" class="labelinput">Nome da Mãe:</label>
-          <input type="text" name="nomedamae" id="nomedamae" class="inputUser" required />
+          <input type="text" name="nomedamae" id="nomedamae" class="inputUser" value="<?php echo $nomemae ?>" required />
         </div>
         <br />
         <div class="inputBox">
           <label for="cpfdamae" class="labelinput">CPF da Mãe:</label>
-          <input type="text" name="cpfdamae" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx" class="inputUser" required />
+          <input type="text" name="cpfdamae" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx" class="inputUser" value="<?php echo $cpfmae ?>" required />
         </div>
         <br />
         <div class="inputBox">
           <label for="nomedopai" class="labelinput">Nome do Pai:</label>
-          <input type="text" name="nomedopai" id="nomedopai" class="inputUser" required />
+          <input type="text" name="nomedopai" id="nomedopai" class="inputUser" value="<?php echo $nomepai ?>" required />
         </div>
         <br />
         <div class="inputBox">
           <label for="cpfdopai" class="labelinput">CPF do Pai:</label>
-          <input type="text" name="cpfdopai" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx" class="inputUser" required />
+          <input type="text" name="cpfdopai" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx" class="inputUser" value="<?php echo $cpfpai ?>" required />
           <br />
           <br />
           <div class="inputBox">
             <label for="telefone" class="labelinput">Celular para Contato:</label>
-            <input type="tel" name="telefone" id="telefone" class="inputUser" pattern="\d{5}-\d{4}" title="Digite um Telefone no formato: xxxxx-xxxx" required />
+            <input type="tel" name="telefone" id="telefone" class="inputUser" pattern="\d{5}-\d{4}" title="Digite um Telefone no formato: xxxxx-xxxx" value="<?php echo $celular ?>" required />
           </div>
           <br />
           <div class="inputBox">
             <label for="endereço" class="labelinput">Endereço Completo:</label>
-            <input type="text" name="endereço" id="endereço" class="inputUser" required />
+            <input type="text" name="endereço" id="endereço" class="inputUser" value="<?php echo $endereco ?>" required />
           </div>
           <br />
           <div class="inputBox">
             <label for="email" class="labelinput">E-mail:</label>
-            <input type="email" name="email" id="email" class="inputUser" required />
+            <input type="email" name="email" id="email" class="inputUser" value="<?php echo $email ?>" required />
           </div>
           <br />
           <div class="inputBox">
             <label for="telefonefixo" class="labelinput">Fone Residencial:</label>
-            <input type="tel" name="telefonefixo" id="telefonefixo" class="inputUser" pattern="\d{4}-\d{4}" title="Digite um Telefone no formato: (+xx)xxxx-xxxx" />
+            <input type="tel" name="telefonefixo" id="telefonefixo" class="inputUser" pattern="\d{4}-\d{4}" title="Digite um Telefone no formato: (+xx)xxxx-xxxx" value="<?php echo $telefonefixo ?>" />
           </div>
           <br /><br />
           <div class="inputBox">
             <label for="nomedoresponsavel" class="labelinput">Nome do Responsável:</label>
-            <input type="text" name="nomedoresponsavel" id="nomedoresponsavel" class="inputUser" />
+            <input type="text" name="nomedoresponsavel" id="nomedoresponsavel" class="inputUser" value="<?php echo $nomeresponsavel ?>" />
           </div>
           <br />
           <div class="inputBox">
             <label for="cpfdoresponsavel" class="labelinput">CPF do Responsável:</label>
-            <input type="text" name="cpfdoresponsavel" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx" class="inputUser" required />
+            <input type="text" name="cpfdoresponsavel" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx" class="inputUser" value="<?php echo $cpfresponsavel ?>" required />
           </div>
           <br /><br /><br />
           <p>Possui Alergia a algum Medicamento?</p>
           <br />
           <div class="alergia1">
             <label for="opc3" class="labelinput">Sim,Qual?(Caso não tenha não é necessario responder.)</label>
-            <input type="text" name="alergia" id="alergia" />
+            <input type="text" name="alergia" id="alergia" value="<?php echo $alergia ?>"/>
             <br /><br>
             <br />
           </div>
           <br />
           <p>Opcão de Pagamento</p>
           <br />
-          <input type="radio" name="pagamentos" id="Carnê" value="Carnê" required />
+          <input type="radio" name="pagamentos" id="Carnê" value="Carnê" <?php $pagamentos == 'Carnê' ? 'checked' : '' ?> required />
           <label for="opc1.5">Carnê</label>
-          <input type="radio" name="pagamentos" id="Pix" value="Pix" required />
+          <input type="radio" name="pagamentos" id="Pix" value="Pix" <?php $pagamentos == 'Pix' ? 'checked' : '' ?> required />
           <label for="opc2.5">Pix</label>
-          <input type="radio" name="pagamentos" id="Boleto" value="Boleto" required />
+          <input type="radio" name="pagamentos" id="Boleto" value="Boleto" <?php $pagamentos == 'Boleto' ? 'checked' : '' ?> required />
           <label for="opc3.5">Boleto</label>
-          <input type="radio" name="pagamentos" id="Dinheiro" value="Dinheiro" required />
+          <input type="radio" name="pagamentos" id="Dinheiro" value="Dinheiro" <?php $pagamentos == 'Dinheiro' ? 'checked' : '' ?> required />
           <label for="opc4">Dinheiro</label>
-          <input type="radio" name="pagamentos" id="Cartão" value="Cartão" required />
+          <input type="radio" name="pagamentos" id="Cartão" value="Cartão" <?php $pagamentos == 'Cartão' ? 'checked' : '' ?> required />
           <label for="opc5">Cartão</label>
           <br>
           <button class="submit" name="submit" type="submit" id="submit">
