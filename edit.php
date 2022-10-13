@@ -14,22 +14,22 @@ if (!empty($_GET['idaluno'])) {
         {
             while($user_data = mysqli_fetch_assoc($result))
             {
-              $nome = $_POST['nome'];
-              $rg = $_POST['rg'];
-              $cpf = $_POST['cpf'];
-              $datanasc = $_POST['datadenascimento'];
-              $nomemae = $_POST['nomedamae'];
-              $cpfmae = $_POST['cpfdamae'];
-              $nomepai = $_POST['nomedopai'];
-              $cpfpai = $_POST['cpfdopai'];
-              $celular = $_POST['telefone'];
-              $endereco = $_POST['endereço'];
-              $email = $_POST['email'];
-              $telefonefixo = $_POST['telefonefixo'];
-              $nomeresponsavel = $_POST['nomedoresponsavel'];
-              $cpfresponsavel = $_POST['cpfdoresponsavel'];
-              $alergia = $_POST['alergia'];
-              $pagamentos = $_POST['pagamentos'];
+              $nome = $user_data['nome'];
+              $rg = $user_data['rg'];
+              $cpf = $user_data['cpf'];
+              $datanasc = $user_data['datadenascimento'];
+              $nomemae = $user_data['nomedamae'];
+              $cpfmae = $user_data['cpfdamae'];
+              $nomepai = $user_data['nomedopai'];
+              $cpfpai = $user_data['cpfdopai'];
+              $celular = $user_data['telefone'];
+              $endereco = $user_data['endereço'];
+              $email = $user_data['email'];
+              $telefonefixo = $user_data['telefonefixo'];
+              $nomeresponsavel = $user_data['nomedoresponsavel'];
+              $cpfresponsavel = $user_data['cpfdoresponsavel'];
+              $alergia = $user_data['alergia'];
+              $pagamentos = $user_data['pagamentos'];
             }
         }
           else
