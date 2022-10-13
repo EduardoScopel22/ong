@@ -1,8 +1,8 @@
 <?php
 
-if (!empty($_GET['idaluno'])) {
+include_once('config.php');
 
-  include_once('config.php');
+if (!empty($_GET['idaluno'])) {
 
   $id = $_GET['idaluno'];
 
