@@ -61,7 +61,7 @@
         <br />
         <div class="inputBox">
           <label for="datadenascimento" class="labelinput">Data de Nascimento:</label>
-          <input type="date" name="datadenascimento" id="datadenascimento" class="inputdatadenascimento" value=<?php echo $datanasc;?> required />
+          <input type="text" name="datadenascimento" id="datadenascimento" class="inputdatadenascimento" value=<?php echo $datanasc;?> required />
         </div>
         <br />
         <div class="inputBox">
