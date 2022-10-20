@@ -69,7 +69,7 @@ else
         <br />
         <div class="inputBox">
           <label for="datadenascimento" class="labelinput">Data de Nascimento:</label>
-          <input type="text" name="datadenascimento" id="datadenascimento" class="inputdatadenascimento" required />
+          <input type="date" name="datadenascimento" id="datadenascimento" class="inputdatadenascimento" required />
         </div>
         <br />
         <div class="inputBox">
