@@ -62,7 +62,7 @@ legend {
   pointer-events: none;
   transition: 0.5s;
 }
-#submit {
+.submit {
   width: 91%;
   padding: 16px 0px;
   margin: 25px;

@@ -148,7 +148,7 @@ if (isset($_POST['submit'])) {
           <input type="radio" name="pagamentos" id="Cartão" value="Cartão" required />
           <label for="opc5">Cartão</label>
           <br>
-          <button name="submit" type="submit" id="submit">
+          <button class="submit" name="submit" type="submit" id="submit">
             Enviar
           </button>
       </fieldset>
