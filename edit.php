@@ -12,7 +12,7 @@ if (!empty($_GET['idaluno'])) {
 
   if($resultado->num_rows > 0)
         {
-            while($user_data = mysqli_fetch_assoc($resulto))
+            while($user_data = mysqli_fetch_assoc($resultado))
             {
               $nome = $user_data['nomealuno'];
               $rg = $user_data['rgaluno'];
