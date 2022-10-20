@@ -14,7 +14,7 @@ if (!empty($_GET['idaluno'])) {
         {
             while($user_data = mysqli_fetch_assoc($result))
             {
-              $nome = $user_data['nome'];
+              $nome1 = $user_data['nome'];
               $rg = $user_data['rg'];
               $cpf = $user_data['cpf'];
               $datanasc = $user_data['datadenascimento'];
@@ -60,7 +60,7 @@ if (!empty($_GET['idaluno'])) {
         <legend><strong>Ficha do Aluno</strong></legend>
         <div class="inputBox">
           <label for="nome" class="labelinput">Nome Completo do Aluno:</label>
-          <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required />
+          <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome1;?> required />
         </div>
         <br />
         <div class="inputBox">
