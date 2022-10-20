@@ -12,9 +12,9 @@ if (!empty($_GET['idaluno'])) {
 
   if($resultado->num_rows > 0)
         {
-            while($user_data = mysqli_fetch_assoc($result))
+            while($user_data = mysqli_fetch_assoc($resulto))
             {
-              $nome1 = $user_data['nome'];
+              $nome = $user_data['nome'];
               $rg = $user_data['rg'];
               $cpf = $user_data['cpf'];
               $datanasc = $user_data['datadenascimento'];
