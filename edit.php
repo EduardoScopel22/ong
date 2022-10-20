@@ -14,22 +14,22 @@ if (!empty($_GET['idaluno'])) {
         {
             while($user_data = mysqli_fetch_assoc($result))
             {
-              $nomealuno = $user_data['nomealuno'];
-              $rgaluno = $user_data['rgaluno'];
-              $cpfaluno = $user_data['cpfaluno'];
-              $datanasc = $user_data['datanasc'];
-              $nomemae = $user_data['nomemae'];
-              $cpfmae = $user_data['cpfmae'];
-              $nomepai = $user_data['nomepai'];
-              $cpfpai = $user_data['cpfpai'];
-              $celular = $user_data['celular'];
-              $endereco = $user_data['endereco'];
+              $nome = $user_data['nome'];
+              $rg = $user_data['rg'];
+              $cpf = $user_data['cpf'];
+              $datanasc = $user_data['datadenascimento'];
+              $nomemae = $user_data['nomedamae'];
+              $cpfmae = $user_data['cpfdamae'];
+              $nomepai = $user_data['nomedopai'];
+              $cpfpai = $user_data['cpfdopai'];
+              $celular = $user_data['telefone'];
+              $endereco = $user_data['endereço'];
               $email = $user_data['email'];
               $telefonefixo = $user_data['telefonefixo'];
               $nomeresponsavel = $user_data['nomeresponsavel'];
               $cpfresponsavel = $user_data['cpfresponsavel'];
               $alergia = $user_data['alergia'];
-              $pagamentos = $user_data['pagamento'];
+              $pagamentos = $user_data['pagamentos'];
             }
         }
           else
@@ -60,7 +60,7 @@ if (!empty($_GET['idaluno'])) {
         <legend><strong>Ficha do Aluno</strong></legend>
         <div class="inputBox">
           <label for="nome" class="labelinput">Nome Completo do Aluno:</label>
-          <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nomealuno;?> required />
+          <input type="text" name="nome" id="nome" class="inputUser" value="<?php echo $nomealuno;?>" required />
         </div>
         <br />
         <div class="inputBox">
