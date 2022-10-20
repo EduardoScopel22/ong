@@ -38,6 +38,10 @@ if (!empty($_GET['idaluno'])) {
         }
 
 }
+else
+    {
+        header('Location: sistema.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
