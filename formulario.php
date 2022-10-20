@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
   $pagamentos = $_POST['pagamentos'];
 
 
-  $result = mysqli_query($mysql, "INSERT INTO aluno(nomealuno,datanasc,cpfaluno,rgaluno,nomemae,cpfmae,nomepai,cpfpai,celular,endereco,email,telefonefixo,nomeresponsavel,cpfresponsavel,alergia,pagamento) VALUES ('$nome','$datanasc','$cpf','$rg','$nomemae','$cpfmae','$nomepai','$cpfpai','$celular','$endereco','$email','$telefonefixo','$nomeresponsavel','$cpfresponsavel','$alergia','$pagamentos')");
+  $result = mysqli_query($conexao, "INSERT INTO aluno(nomealuno,datanasc,cpfaluno,rgaluno,nomemae,cpfmae,nomepai,cpfpai,celular,endereco,email,telefonefixo,nomeresponsavel,cpfresponsavel,alergia,pagamento) VALUES ('$nome','$datanasc','$cpf','$rg','$nomemae','$cpfmae','$nomepai','$cpfpai','$celular','$endereco','$email','$telefonefixo','$nomeresponsavel','$cpfresponsavel','$alergia','$pagamentos')");
 }
 
     session_start();

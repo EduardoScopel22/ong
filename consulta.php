@@ -11,7 +11,7 @@
 
     $sql = "SELECT * FROM aluno ORDER BY idaluno DESC";
 
-    $result = $result = $mysql->query($sql); 
+    $result = $result = $conexao->query($sql); 
 ?>
 <!DOCTYPE html>
 <html lang="en">

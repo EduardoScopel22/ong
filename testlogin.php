@@ -15,7 +15,7 @@
 
         $sql = "SELECT * FROM login WHERE usuario = '$usuario' and senha = '$senha'";
 
-        $result = $mysql->query($sql); 
+        $result = $conexao->query($sql); 
 
         //print_r($result);
         //print_r($sql);

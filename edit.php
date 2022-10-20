@@ -8,7 +8,7 @@ if (!empty($_GET['idaluno'])) {
 
   $sqlSelect = 'SELECT * FROM aluno WHERE idaluno=$id';
 
-  $resultado = $mysql->query($sqlSelect);
+  $resultado = $conexao->query($sqlSelect);
 
   if($resultado->num_rows > 0)
         {
