@@ -40,7 +40,7 @@ if (!empty($_GET['idaluno'])) {
 }
 else
     {
-        header('Location: sistema.php');
+        header('Location: consulta.php');
     }
 ?>
 <!DOCTYPE html>
